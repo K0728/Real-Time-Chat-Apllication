@@ -2,11 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Real-Time Modified Chat Application</title>
 
+    <!-- SEO Title -->
+    <title>Instant Real-Time Chat Application | Spring Boot WebSocket Messaging</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Instant real-time chat application built using Spring Boot and WebSocket technology. Chat live with multiple users without refreshing the page.">
+
+    <meta name="keywords"
+          content="real time chat app, spring boot chat application, websocket messaging, live chat app, java chat project">
+
+    <meta name="author" content="Kunal Singh">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph (Social Sharing SEO) -->
+    <meta property="og:title" content="Instant Real-Time Chat Application">
+    <meta property="og:description"
+          content="Live messaging application powered by Spring Boot and WebSocket. Chat instantly online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://instant-chat-with-kunal.onrender.com/">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
+    <!-- Structured Data (Advanced SEO) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Instant Real-Time Chat Application",
+            "operatingSystem": "Web Browser",
+            "applicationCategory": "CommunicationApplication",
+            "creator": {
+                "@type": "Person",
+                "name": "Kunal Singh"
+            }
+        }
+    </script>
+
+    <!-- WebSocket Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.2.0/bundles/stomp.umd.min.js"></script>
 </head>
@@ -14,31 +51,62 @@
 <body>
 <div class="container mt-4">
 
-    <h1 class="text-center">Real-Time Modified Chat Application</h1>
+    <!-- SEO Friendly Heading -->
+    <header class="text-center mb-4">
+        <h1>Instant Real-Time Chat Application</h1>
+        <p class="text-muted">
+            A live messaging platform built using Spring Boot and WebSocket technology
+            for instant communication without page refresh.
+        </p>
+    </header>
 
-    <div id="chat"
-         class="border rounded p-3 mb-3"
-         style="height:300px; overflow-y:auto;">
-    </div>
+    <!-- Chat Box -->
+    <main>
+        <div id="chat"
+             class="border rounded p-3 mb-3"
+             style="height:300px; overflow-y:auto;">
+        </div>
 
-    <div class="input-group mb-3">
-        <input id="senderInput"
-               type="text"
-               class="form-control"
-               placeholder="Your Name..."/>
-    </div>
+        <div class="input-group mb-3">
+            <input id="senderInput"
+                   type="text"
+                   class="form-control"
+                   placeholder="Your Name..."
+                   aria-label="Sender Name"/>
+        </div>
 
-    <div class="input-group mb-3">
-        <input id="messageInput"
-               type="text"
-               class="form-control"
-               placeholder="Type a Message..."/>
+        <div class="input-group mb-3">
+            <input id="messageInput"
+                   type="text"
+                   class="form-control"
+                   placeholder="Type a Message..."
+                   aria-label="Message Input"/>
 
-        <button id="sendMessage"
-                class="btn btn-primary">
-            Send
-        </button>
-    </div>
+            <button id="sendMessage"
+                    class="btn btn-primary">
+                Send
+            </button>
+        </div>
+    </main>
+
+    <!-- Additional SEO Content -->
+    <section class="mt-4">
+        <h2>About This Project</h2>
+        <p>
+            This real-time chat application demonstrates WebSocket communication using
+            Spring Boot and STOMP messaging protocol. It allows users to send and receive
+            messages instantly across multiple devices.
+        </p>
+
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>WebSocket</li>
+            <li>STOMP Protocol</li>
+            <li>Bootstrap 5</li>
+        </ul>
+    </section>
 
 </div>
 
@@ -109,3 +177,4 @@
 
 </body>
 </html>
+
